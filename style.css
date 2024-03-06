@@ -1,0 +1,323 @@
+*{
+    margin: 0;
+    font-family: arial;
+    border: border-box;
+}
+
+.navbar{
+    height: 60px;
+    background-color:#0f1111;
+    color: white;
+    display: flex; /*becoz navbar is a large container which contains all the other small container*/
+    align-items: center;
+    justify-content: space-evenly; /*to give all the boxes with even spaces so that they get spread in the big container*/
+
+
+
+}
+
+.nav-logo{
+    height:50px; /*image can only be seen when the div's height is set */
+    width:100px;
+
+}
+
+.logo{
+    background-image:url("amazonlogo.png");
+    background-size: cover;
+    height: 50px; 
+    width: 100%;
+
+}
+
+.border{
+    border: 1.5px solid transparent;
+   
+    
+}
+
+.border:hover{
+    border: 1.5px solid white;
+}
+
+/**box2**/
+
+.add-1{
+    color: #cccccc;
+    font-size:0.85rem; /*rootem for size so that if page is decreased or increased the size of font is automatically changed */
+    margin-left: 15px;
+}
+
+.add-2{
+    color: white;
+    font-size: 1rem;
+    margin-left: 3px;
+}
+
+.add-icon{
+    display: flex;
+    align-items: center;
+
+}
+
+/*box3*/
+.nav-search{
+    display: flex;
+    background-color:red;
+    width:620px;
+    height: 40px;
+    border-radius:4px;/*to give curve to the border of the selected item*/
+    justify-content: space-evenly;
+
+}
+
+.search-select{ /*this is for All box and we are setting the corner round from left*/
+    background-color:#f3f3f3;
+    text-align:center;
+    width:50px;
+    border-top-left-radius:4px;
+    border-bottom-left-radius:4px;
+    border: none;
+}
+
+.search-input{
+    width:100%; /*the whole left over space is taken by the search bar whereas when we use pixel will keep changing the place to occupy the 100 per of the space when we are changing the size of screen*/
+    font-size:1rem;
+    border: none;/*by default border i.e. of black colour is vanished*/
+    
+}
+
+.search-icon{
+    width: 45px;
+    display: flex; 
+    justify-content: center;/*horizontally center*/
+    align-items:center;/*vertically center*/
+    font-size:1.2rem;
+    background-color:orange;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius:4px;
+    color:#0f1111;
+}
+
+.nav-search:hover {
+    border:2px solid orange;
+}
+
+/*box4*/
+
+span{
+    font-size: 0.7rem;
+}
+
+.nav-second{
+    font-size: 0.85rem;
+    font-weight:700;  /*for darker text*/ 
+
+}
+/**box6**/
+
+.nav-Cart i{
+    font-size:30px;
+}
+
+.nav-Cart{
+    font-size: 0.85rem;
+    font-weight: 700;
+    
+}
+
+/**panel**/
+
+.Panel{
+    height:40px;
+    background-color: #222f3d;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.Panel-ops p{
+    display: inline;
+    margin-left:10px;
+
+}
+
+.Panel-ops{
+    width: 70%;
+    font-size: 0.85rem;
+
+}
+
+.Panel-deals{
+    font-size: 0.9rem;
+    font-weight: 700;
+
+}
+
+/**hero section**/
+
+.hero-section{
+    background-image: url("image2.png");
+    background-size: cover;
+    height:350px;
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+
+
+
+}
+
+.hero-msg{
+    background-color: white;
+    color:black;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.85rem;
+    width: 80%;
+    margin: 30px;/*to give margin to the written part of hero section*/
+
+}
+
+.hero-msg a{
+    color:#007185;
+
+
+}
+
+/**shop section**/
+.shop-section{
+    display: flex;
+    flex-wrap: wrap; /*to bring 4 img in 1 line only*/
+    justify-content: space-evenly;
+    background-color:#e2e7e6;
+    
+}
+
+.box{ /**to call box **/
+    height:400px;
+    width: 23%;
+    background-color: snow;
+    padding: 20px 0px 15px;
+    margin-top: 15px;
+}
+
+.box-image{
+    height:300px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-size: cover;
+
+
+}
+
+.box-content{
+    margin-left:1rem; /**1rem=16px*/
+    margin-right:1rem;
+}
+
+.box-content p{
+    color:#007185;
+}
+
+/**footer**/
+
+.footer{
+    margin-top:15px;
+
+
+}
+
+.footer-panel1{
+    background-color: #37475a;
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.85rem;
+}
+
+/**footer panel2*/
+
+.footer-panel2 {
+    background-color: #222f3d;
+    color: white;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+ul{
+    margin-top:20px;
+}
+
+ul a{
+    display: block; /** it takes whole space creating a box it takes away whole width**/
+    text-decoration: none;
+    font-size: 0.85rem;
+    margin-top: 10px;
+    color: #dddddd;
+
+}
+
+/*footer panel3*/
+
+.footer-panel3{
+    background-color: #222f3d;
+    color: white;
+    border-top: 0.5px solid white;
+    height:70px;
+    display: flex;
+    justify-content: center;
+}
+
+.logo{
+    background-image: url("amazonlogo2.png.png");
+    background-size: cover;
+    height: 50px;
+    width: 100px;
+}
+
+/**footer panel4 **/
+
+.footer-panel4{
+    background-color: #0f1111;
+    color: white;
+    height:80px;
+    /** display: flex;
+    justify-content: center;
+    align-items: center;**/
+
+}
+
+.pages{
+    font-size: 0.7rem;
+    text-align: center;
+    padding: 25px;
+    
+}
+
+.pages a{
+    text-decoration: none;
+
+}
+
+.Copyright{
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 5px;
+
+}
+
+
+
+
+
+
+
